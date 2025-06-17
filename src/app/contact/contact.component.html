@@ -1,0 +1,41 @@
+<div class="sec  pt-3 ">
+  <div class="content pt-4  text-center  ">
+      <h1 class="fw-bold text-uppercase mb-3  text-color ">conatct section</h1>
+      <app-stars [classBg]="bgClass" [TextColor]="textColor" ></app-stars>
+    </div>
+
+    <form class="labels  w-50 mx-auto mt-5 p-3  ">
+      
+      <label 
+      [class.top-0]="textname.length > 0"
+         class=" position-relative topLabel " for="userName">userName :</label>
+      <input name=" "  [(ngModel)]="textname" class="py-3 form-control  position-relative "  type="text" id="userName" placeholder="userName">
+      
+      <label
+      [class.top-0]="textage > 0"
+      class="position-relative  topLabel " for="userName">userAge :</label>
+      <input name=" "  [(ngModel)]="textage" class="py-3 form-control  position-relative "  type="number" id="userAge" placeholder="userAge">
+
+      <label
+      [class.top-0]="textemail.length > 0"
+      class="position-relative topLabel " for="userName">userEmail :</label>
+      <input name=" "  [(ngModel)]="textemail" class="py-3 form-control  position-relative "  type="text" id="userEmail" placeholder="userEmail">
+
+      <label
+      [class.top-0]="textpass.length"
+      class="position-relative topLabel " for="userName">userPassword :</label>
+      <input name=" "  [(ngModel)]="textpass" class="py-3 form-control  position-relative "  type="text" id="userPassword" placeholder="userPassword">
+
+
+   
+
+  <button class="btn myBtn secondary-color nav-text-color mx-auto  mt-4 ">send Massage</button>
+
+         
+    </form>
+     
+      
+</div>
+
+
+

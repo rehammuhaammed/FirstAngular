@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --main-color: #FCEDD8 ; 
+  --secondary-color: #904A30  ;
+  --navheight: 5.6875rem;
+  --footerheight:19rem;
+}
+.sec{
+       margin-top: var(--navheight);
+       min-height: 84vh;
+}
+.main-color{
+   background-color: var(--main-color);
+}
+
+.secondary-color{
+  background-color: var(--secondary-color);
+}
+.text-color{
+  color: var(--secondary-color);
+}
+.nav-text-color{
+  color: var(--main-color);
+}

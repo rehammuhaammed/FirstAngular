@@ -1,0 +1,14 @@
+.navbg-color{
+  background-color: var(--secondary-color);
+}
+.Active{
+ background-color: #95624f;
+ padding: 10px;
+ color: var(--main-color);
+}
+a{
+  text-decoration: none;
+}
+.nav-link:focus, .nav-link:hover {
+    color: var(--main-color);
+}

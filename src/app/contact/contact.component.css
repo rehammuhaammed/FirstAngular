@@ -1,0 +1,34 @@
+.sec{
+  background-color: #fff6ea;
+}
+.labels input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #dee2e6;
+    background: #fff6ea;
+  
+   
+}
+.labels input:focus {
+   
+    
+    
+        box-shadow: none;
+   
+}
+.labels{
+    color: var(--secondary-color);
+  
+}
+
+.topLabel{
+    top: 40px;
+}
+label{
+        transition: .6s all;
+        margin-bottom: 7px;
+}
+.myBtn:hover{
+    background-color: var(--secondary-color);
+    color: var(--main-color);
+}

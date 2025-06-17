@@ -1,0 +1,16 @@
+.sec{
+  background-color: #fff6ea;
+}
+.Img{
+    height: 400px; 
+  object-fit: cover;
+  cursor: pointer;
+}
+.layer{
+ cursor: pointer;
+opacity: 0;
+transition: .6s opacity;
+}
+.inner:hover .layer{
+    opacity: 0.9;
+}

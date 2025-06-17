@@ -1,0 +1,27 @@
+<div class="sec  pt-3  ">
+  <div class="content pt-4  text-center   ">
+      <h1 class="fw-bold text-uppercase mb-3  text-color ">portfolio component</h1>
+      <app-stars [classBg]="bgClass" [TextColor]="textColor" ></app-stars>
+    </div>
+
+    <div class="container  pb-5 ">
+        <div class="row row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5 ">
+          @for (img of images; track $index) {
+              <div class="col">
+                <div class="inner position-relative  ">
+                    <img    class="w-100  Img rounded-3" [src]="img" alt="">
+                    <div   data-bs-toggle="modal" data-bs-target="#imageModal" (click)="saveImg(img)" class="w-100 h-100 position-absolute top-0  main-color d-flex justify-content-center align-items-center layer">
+                        <i class="text-white fa-solid fa-plus fa-6x"></i>
+                    </div>
+                </div>
+            </div>
+          }
+            
+        </div>
+    </div>
+      
+    <app-modal [current_Img]="currentImg" ></app-modal>
+
+
+</div>
+
