@@ -12,3 +12,10 @@ a{
 .nav-link:focus, .nav-link:hover {
     color: var(--main-color);
 }
+nav{
+  padding: 1.5rem 0rem;
+  transition: .6s padding
+}
+.Scrollpadding{
+  padding: 8px 0px;
+}

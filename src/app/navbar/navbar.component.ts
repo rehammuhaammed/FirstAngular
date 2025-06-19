@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, OnDestroy, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
@@ -7,6 +7,23 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
-export class NavbarComponent {
+export class NavbarComponent   {
+
+  scrollPosition: number = 0;
+  isScrolled:boolean=false;
+  
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.scrollPosition = window.scrollY || window.pageYOffset;
+    
+     if (this.scrollPosition >= 100) {
+    this.isScrolled = true;
+  } else {
+    this.isScrolled = false;
+    
+    
+  }
+  }
+
 
 }
